@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    margin: 0;
+    padding: 0px 0 18% 0;
+    background-image: linear-gradient(to top, rgb(32, 1, 1), rgb(19, 0, 0), rgb(15, 0, 0));
+    height: 100vh;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+span{
+    font-size: x-large;
+}
+
+.containerMain{
+   margin-bottom: 50px;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* celulares pequenos */
+@media (max-width: 360px) {
+  .container { padding: 0; height: auto; min-height: 100vh; }
+  .main { flex-direction: column; align-items: center; padding: 10px; }
+  span { font-size: medium; text-align: center; margin-bottom: 10px; }
+  .containerMain { padding: 0 10px 15px; }
+}
+
+/* celulares médios/grandes */
+@media (max-width: 430px) {
+  .container { padding: 0; height: auto; min-height: 100vh; }
+  .main { flex-direction: column; align-items: center; padding: 15px; }
+  span { font-size: large; text-align: center; margin-bottom: 12px; }
+  .containerMain { padding: 0 15px 20px; }
+}
+
+/* tablets e dobráveis */
+@media (max-width: 768px) {
+  .container { padding: 0; height: auto; min-height: 100vh; }
+  .main { flex-direction: column; align-items: center; padding: 20px; }
+  span { font-size: x-large; text-align: center; margin-bottom: 15px; }
+  .containerMain { padding: 0 20px 25px; }
+}
+
+/* ==================== AJUSTES PARA LANDSCAPE ==================== */
+
+/* Landscape geral */
+@media (orientation: landscape) {
+  .container {
+    padding: 0;
+    height: auto;           /* evita ocupar 100% se não precisar */
+    min-height: 100vh;
+  }
+
+  .main {
+    flex-direction: row;    /* aproveita largura em vez de empilhar */
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  span {
+    font-size: large;
+    text-align: center;
+    margin: 0 15px;         /* espaçamento lateral */
+  }
+
+  .containerMain {
+    padding: 0 20px;
+  }
+}
+
+/* Celulares em landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+  .main {
+    flex-direction: row;    
+    flex-wrap: wrap;        /* permite quebrar linha se faltar espaço */
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  span {
+    font-size: medium;
+    margin: 0 10px;
+  }
+
+  .containerMain {
+    padding: 0 10px 10px;
+  }
+}
+
+/* Smartphones pequenos em landscape */
+@media (max-width: 430px) and (orientation: landscape) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px;
+  }
+
+  span {
+    font-size: small;
+    margin: 0 5px;
+  }
+
+  .containerMain {
+    padding: 0 5px 8px;
+  }
+}

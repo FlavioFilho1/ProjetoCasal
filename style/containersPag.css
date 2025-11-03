@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0;
+    padding: 0 0 0 0;
+    background-image: linear-gradient(to top, rgb(32, 1, 1), rgb(19, 0, 0), rgb(15, 0, 0));
+    height: 100vh;
+}

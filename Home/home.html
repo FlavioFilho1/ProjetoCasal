@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/containerPag.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>  
+</head>
+
+
+<body> 
+
+  <div class="container">
+
+    <header class="titleTop">
+      <div class="back">
+        <button type="button" id="start-btn2">
+          <i class="arrow left"></i>
+        </button>
+      </div>
+
+      <div class="audio">
+        <div class="audio-wrapper ">
+          <audio id="player" controls>
+            <source src="MP3/Melim - Dois Corações (Versão Acústica)(MP3_160K).mp3" type="audio/mp3" />
+          </audio>          
+        </div>
+      </div>      
+
+      <script>
+        const player = new Plyr('#player', { autoplay: true, loop: true });
+      </script>      
+    </header>
+
+    <!-- Botão voltar -->
+    <!-- <div class="back">
+      <button type="button" id="start-btn2">
+        <i class="arrow left"></i>
+      </button>
+    </div>
+
+        <div class="audio">
+      <audio controls autoplay muted loop>
+        <source src="MP3/Melim - Dois Corações (Versão Acústica)(MP3_160K).mp3">
+      </audio>
+    </div> -->
+
+    <!-- Slider -->
+    <main class="containerMain">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="projectImg">
+              <img src="imagem/IMG_20250912_123201_575.jpg" alt="Imagem do casal">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="projectImg">
+              <img src="imagem/IMG_20250912_123231_786.jpg" alt="Imagem do casal">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="projectImg">
+              <img src="imagem/IMG_20250912_123239_600.jpg" alt="Imagem do casal">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+
+    <!-- Título e descrição -->
+    <div class="title01">
+      <h1 class="alex-brush-regular">Flávio e Raissa</h1>
+      <p>Cada momento em seu lado é um presente que a vida me deu, e sou eternamente grato por te ter como minha. Você é a razão e meu sorriso, a calma meus dias turbulentos e a alegria que ilumina meu coração. Te amo mais que palavras podem expressar.</p>
+    </div>
+
+    <!-- Contador -->
+    <div class="box">
+      <p>Compartilhando momentos há</p>
+      <div class="date">
+        <div class="boxAno"><div class="value"></div><div class="label">Anos</div></div>
+        <div class="boxMes"><div class="value"></div><div class="label">Meses</div></div>
+        <div class="boxDia"><div class="value"></div><div class="label">Dias</div></div>
+        <div class="boxHora"><div class="value"></div><div class="label">Horas</div></div>
+        <div class="boxMin"><div class="value"></div><div class="label">Minutos</div></div>
+        <div class="boxSec"><div class="value"></div><div class="label">Segundos</div></div>
+      </div>
+      <div class="niver"><p>❤️Desde 06/11/2023❤️</p></div>
+    </div>
+
+    <footer class="rodape-container">
+      <small class="radape">Edited by Flávio - 2025</small>
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="script/script.js"></script>
+  <script src="script/countProgress.js"></script>
+  <script src="script/backButton.js"></script>
+  <script src="script/heartAnimation.js"></script>
+</body>
+</html>
