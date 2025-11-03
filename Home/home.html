@@ -30,18 +30,7 @@
           <i class="arrow left"></i>
         </button>
       </div>
-
-      <div class="audio">
-        <div class="audio-wrapper ">
-          <audio id="player" controls>
-            <source src="MP3/Melim - Dois Corações (Versão Acústica)(MP3_160K).mp3" type="audio/mp3" />
-          </audio>          
-        </div>
-      </div>      
-
-      <script>
-        const player = new Plyr('#player', { autoplay: true, loop: true });
-      </script>      
+     
     </header>
 
     <!-- Botão voltar -->
@@ -100,12 +89,24 @@
         <div class="boxMin"><div class="value"></div><div class="label">Minutos</div></div>
         <div class="boxSec"><div class="value"></div><div class="label">Segundos</div></div>
       </div>
-      <div class="niver"><p>❤️Desde 06/11/2023❤️</p></div>
+
+      <div class="audio">
+        <div class="audio-wrapper ">
+          <audio id="player" controls>
+            <source src="MP3/Melim - Dois Corações (Versão Acústica)(MP3_160K).mp3" type="audio/mp3" />
+          </audio>          
+        </div>
+      </div>      
+
+      <script>
+        const player = new Plyr('#player', { autoplay: true, loop: true });
+      </script>       
+      <div class="niver"><p>❤️Desde 06/11/2023❤️</p></div>  
     </div>
 
     <footer class="rodape-container">
       <small class="radape">Edited by Flávio - 2025</small>
-    </footer>
+    </footer>    
   </div>
 
   <!-- JS -->
